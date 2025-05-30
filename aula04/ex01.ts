@@ -1,6 +1,6 @@
 import readLine from 'readline-sync';
 
-const colors: Array<string> = Array();
+const colors: Array<string> = new Array();
 const colorQuantity = 5;
 
 for (let index = 0; index < colorQuantity; index++) {
