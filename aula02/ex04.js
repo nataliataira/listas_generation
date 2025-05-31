@@ -1,8 +1,8 @@
 const readLine = require('readline-sync');
 
-let input1 = readLine.question();
-let input2 = readLine.question();
-let input3 = readLine.question();
+let input1 = readLine.question({limitMessage: 'Esta informação não pode ser vazia.'});
+let input2 = readLine.question({limitMessage: 'Esta informação não pode ser vazia.'});
+let input3 = readLine.question({limitMessage: 'Esta informação não pode ser vazia.'});
 
 
 if (input1 === "vertebrado" && input2 === "ave" && input3 === "carnivoro") {
