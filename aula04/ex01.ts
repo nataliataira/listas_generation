@@ -4,7 +4,7 @@ const colors: Array<string> = new Array();
 const colorQuantity = 5;
 
 for (let index = 0; index < colorQuantity; index++) {
-    colors.push(readLine.question('Digite uma cor: '));
+    colors.push(readLine.question('Digite uma cor: ', {limitMessage: 'Digite uma cor válida.'}));
 }
 
 console.log('\nListar todas as cores: ');

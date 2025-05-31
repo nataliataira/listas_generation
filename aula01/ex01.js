@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
-let salary = readline.questionFloat("Digite o salário: ", {limitMessage: 'Por favor digite um salário válido.'});
-let allowance = readline.questionFloat("Digite o abono: ", {limitMessage: 'Por favor digite um abono válido.'});
+let salary = readline.questionFloat("Digite o salário: ", {limitMessage: 'Digite um salário válido.'});
+let allowance = readline.questionFloat("Digite o abono: ", {limitMessage: 'Digite um abono válido.'});
 
 let newSalary = salary + allowance;
 

@@ -1,8 +1,8 @@
 const readLine = require('readline-sync');
 
-let name = readLine.question('Digite seu nome: ');
-let id = readLine.questionInt('Digite o número do cargo: ');
-let salary = readLine.questionFloat('Digite o salário: ');
+let name = readLine.question('Digite seu nome: ', {limitMessage: 'Digite um nome válido.'});
+let id = readLine.questionInt('Digite o número do cargo: ', {limitMessage: 'Digite um cargo válido.'});
+let salary = readLine.questionFloat('Digite o salário: ', {limitMessage: 'Digite um salário válido.'});
 let newSalary;
 let reajust;
 

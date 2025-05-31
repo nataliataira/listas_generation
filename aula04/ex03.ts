@@ -5,7 +5,7 @@ let numberQuantity = 10;
 const numbers: Set<number> = new Set();
 
 for (let index = 0; index < numberQuantity; index++) {
-    inputNumber = readLine.questionInt(`Digite o ${index + 1}o valor: `);
+    inputNumber = readLine.questionInt(`Digite o ${index + 1}o valor: `, {limitMessage: 'Digite um número válido.'});
     numbers.add(inputNumber);
 }
 

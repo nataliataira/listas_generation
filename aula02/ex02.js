@@ -1,6 +1,6 @@
 const readLine = require('readline-sync');
 
-let value = readLine.questionInt('Digite um número: ', {limitMessage: 'Por favor digite um número válido.'});
+let value = readLine.questionInt('Digite um número: ', {limitMessage: 'Digite um número válido.'});
 let positive = false;
 let odd = true;
 

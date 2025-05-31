@@ -1,6 +1,6 @@
 const readLine = require('readline-sync');
 
-let operation = readLine.questionInt('Digite a operação: ');
+let operation = readLine.questionInt('Digite a operação: ', {limitMessage: 'Digite uma operação válida.'});
 
 let value;
 let balance = 1000.00;

@@ -2,7 +2,7 @@ import readLine from 'readline-sync';
 
 let wasFound = false;
 const numbers: Array<number> = new Array(2, 5, 1, 3, 4, 9, 7, 8, 10, 6);
-const numberToFind = readLine.questionInt('Digite o número que você deseja encontrar: ');
+const numberToFind = readLine.questionInt('Digite o número que você deseja encontrar: ', {limitMessage: 'Digite um número válido.'});
 
 
 for (let number of numbers) {

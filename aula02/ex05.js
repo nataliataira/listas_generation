@@ -1,7 +1,7 @@
 const readLine = require('readline-sync');
 
-let id = readLine.questionInt('Digite o código do Produto: ');
-let quantity = readLine.questionInt('Digite a quantidade: ');
+let id = readLine.questionInt('Digite o código do Produto: ', {limitMessage: 'Digite um código válido.'});
+let quantity = readLine.questionInt('Digite a quantidade: ', {limitMessage: 'Digite uma quantidade válida.'});
 let total;
 let price;
 

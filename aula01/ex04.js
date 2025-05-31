@@ -1,9 +1,9 @@
 const readline = require('readline-sync');
 
-let n1 = readline.questionFloat('Digite o 1o valor: ', {limitMessage: 'Por favor digite um valor válido.'});
-let n2 = readline.questionFloat('Digite o 2o valor: ', {limitMessage: 'Por favor digite um valor válido.'});
-let n3 = readline.questionFloat('Digite o 3o valor: ', {limitMessage: 'Por favor digite um valor válido.'});
-let n4 = readline.questionFloat('Digite o 4o valor: ', {limitMessage: 'Por favor digite um valor válido.'});
+let n1 = readline.questionFloat('Digite o 1o valor: ', {limitMessage: 'Digite um valor válido.'});
+let n2 = readline.questionFloat('Digite o 2o valor: ', {limitMessage: 'Digite um valor válido.'});
+let n3 = readline.questionFloat('Digite o 3o valor: ', {limitMessage: 'Digite um valor válido.'});
+let n4 = readline.questionFloat('Digite o 4o valor: ', {limitMessage: 'Digite um valor válido.'});
 
 let result = (n1 * n2) - (n3 * n4);
 

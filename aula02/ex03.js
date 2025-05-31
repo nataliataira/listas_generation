@@ -1,8 +1,8 @@
 const readLine = require('readline-sync');
 
-let name = readLine.question('Digite o Nome do doador: ', {limitMessage: 'Por favor digite um nome válido.'});
-let age = readLine.questionInt('Digite a Idade do doador: ', {limitMessage: 'Por favor digite uma idade válida.'});
-let firstTime = readLine.keyInYN('Primeira doação de sangue? ', {limitMessage: 'Resposta inválida.'});
+let name = readLine.question('Digite o nome do doador: ', {limitMessage: 'Digite um nome válido.'});
+let age = readLine.questionInt('Digite a idade do doador: ', {limitMessage: 'Digite uma idade válida.'});
+let firstTime = readLine.keyInYN('Primeira doação de sangue? ', {limitMessage: 'Input inválido.'});
 
 if (age < 0 || age > 120) {
     console.log('A idade inválida');

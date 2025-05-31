@@ -1,8 +1,8 @@
 const readLine = require('readline-sync');
 
-let numberA = readLine.questionInt('Digite o número A: ', {limitMessage: 'Por favor digite um número válido.'});
-let numberB = readLine.questionInt('Digite o número B: ', {limitMessage: 'Por favor digite um número válido.'});
-let numberC = readLine.questionInt('Digite o número C: ', {limitMessage: 'Por favor digite um número válido.'});
+let numberA = readLine.questionInt('Digite o número A: ', {limitMessage: 'Digite um número válido.'});
+let numberB = readLine.questionInt('Digite o número B: ', {limitMessage: 'Digite um número válido.'});
+let numberC = readLine.questionInt('Digite o número C: ', {limitMessage: 'Digite um número válido.'});
 
 let result = numberA + numberB;
 
