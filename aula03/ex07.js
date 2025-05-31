@@ -1,5 +1,3 @@
-const readLine = require('readline-sync');
-
 let array = [2, 5, 1, 3, 4, 9, 7, 8, 10, 6];
 let indexOfNumber = 0;
 

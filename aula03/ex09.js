@@ -1,5 +1,3 @@
-const readLine = require('readline-sync');
-
 let matrix = [
     [1, 2, 3],
     [4, 5, 6],
