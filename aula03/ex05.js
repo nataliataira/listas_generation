@@ -4,7 +4,7 @@ let inputSum = 0;
 let continueLoop = true;
 
 do {
-    let input = readLine.questionInt('Digite um número: ');
+    let input = readLine.questionInt('Digite um número: ', {limitMessage: 'Por favor digite um número válido.'});
     if (input > 0) {
         inputSum += input;
     } else if (input === 0) {
