@@ -6,7 +6,7 @@ let continueLoop = true;
 let average = 0;
 
 do {
-    let input = readLine.questionInt('Digite um número: ');
+    let input = readLine.questionInt('Digite um número: ', {limitMessage: 'Por favor digite um número válido.'}));
     if (input === 0) {
         continueLoop = false;
     } else if (input % 3 === 0) {
