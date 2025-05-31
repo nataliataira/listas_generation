@@ -8,61 +8,51 @@ interface queueInterface<Type> {
     contains(dataItem: Type): boolean;
     clear(): void;
 }
-  
+
 export class Queue<Type> implements queueInterface<Type> {
-    private QueueData: Array<Type> = [];
+    private queueData: Array<Type> = [];
 
     constructor() {}
 
     isEmpty(): boolean {
-        let result = this.QueueData.length <= 0;
-        return result;
+        return this.queueData.length === 0;;
     }
 
     enqueue(dataItem: Type): void {
-        this.QueueData.push(dataItem);
+        this.queueData.push(dataItem);
     }
 
     dequeue(): Type | undefined {
         if (this.isEmpty()) {
-        console.log('A fila está vazia');
-        return;
-        } else {
-        var element = this.QueueData.shift();
-        return element;
+            console.log('A fila está vazia');
+            return;
         }
+        return this.queueData.shift();
     }
 
     count(): number {
-        let len = this.QueueData.length;
-        return len;
+        return this.queueData.length;
     }
 
     printQueue(): void {
-        for (let i = 0; i < this.QueueData.length; i++) {
-        console.log(this.QueueData[i]);
+        for (let i = 0; i < this.queueData.length; i++) {
+            console.log(this.queueData[i]);
         }
     }
 
     peek(): Type | undefined {
         if (this.isEmpty()) {
-        console.log('A fila está vazia');
-        return;
-        } else {
-        var element = this.QueueData[0];
-        return element;
+            console.log('A fila está vazia');
+            return;
         }
+        return this.queueData[0];
     }
 
     contains(dataItem: Type): boolean {
-        if (this.QueueData.includes(dataItem)) {
-        return true;
-        } else {
-        return false;
-        }
+        return this.queueData.includes(dataItem);
     }
 
     clear(): void {
-        this.QueueData.length = 0;
+        this.queueData.length = 0;
     }
 }
