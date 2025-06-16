@@ -20,7 +20,8 @@ create table if not exists tb_produto (
 	preco DECIMAL(13,4) NOT NULL,
 	altura VARCHAR(30),
 	largura VARCHAR(30) NOT NULL,
-	comprimento VARCHAR(30) NOT NULL
+	comprimento VARCHAR(30) NOT NULL,
+	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 insert into tb_produto

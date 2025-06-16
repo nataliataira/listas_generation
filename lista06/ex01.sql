@@ -16,10 +16,11 @@ use db_rh;
 create table if not exists tb_colaborador (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100) NOT NULL,
-	email VARCHAR(150),
+	email VARCHAR(150) UNIQUE,
 	salario DECIMAL(13,4) NOT NULL,
 	endereco VARCHAR(200),
-	telefone VARCHAR(20)
+	telefone VARCHAR(20),
+	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 );
 
 insert into tb_colaborador

@@ -16,10 +16,11 @@ use db_escola;
 create table if not exists tb_estudante (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100) NOT NULL,
-	email VARCHAR(150),
+	email VARCHAR(150) UNIQUE,
 	endereco VARCHAR(200) NOT NULL,
 	telefone VARCHAR(20),
-	nota DECIMAL(4,2)
+	nota DECIMAL(4,2),
+	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 insert into tb_estudante
